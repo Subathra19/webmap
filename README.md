@@ -31,7 +31,7 @@
 
 ### Sample Screen:
 <p align="center">
-  <img width="600" height="400" src="https://github.com/Subathra19/py_webmap/blob/main/images/sample_screen.PNG">
+  <img width="800" height="400" src="https://github.com/Subathra19/py_webmap/blob/main/images/sample_screen.PNG">
 </p>
 
 ### References:
