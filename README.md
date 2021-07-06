@@ -24,6 +24,7 @@ The most classic game of all time is built with PyGame.
 * Clone the repository to your local machine.
 * Install the above given package.
 * Run my_map.py.
+* Open [mymap.html] in Your local browser.
 
 ### References:
 * [The Python Mega Course](https://www.udemy.com/course/the-python-mega-course)
