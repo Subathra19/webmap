@@ -29,5 +29,10 @@
 * Run my_map.py.
 * Open [mymap.html]() in Your local browser.
 
+### Sample Screen:
+<p align="center">
+  <img width="600" height="400" src="https://github.com/Subathra19/py_webmap/upload/main/images/sample_screen.PNG">
+</p>
+
 ### References:
 * [The Python Mega Course](https://www.udemy.com/course/the-python-mega-course)
