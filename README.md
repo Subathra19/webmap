@@ -4,6 +4,8 @@
   * Capital name
   * Continent name
   * HTML Link 
+* **Folium** is a powerful data visualization library in Python that was built primarily to help people visualize geospatial data.With Folium, one can create a map of any location in the world if its latitude and longitude values are known. It converts python code to HTML/JAVAScript/CSS code automatically
+* **Pandas** is mainly used for data analysis. It allows importing data from various file formats such as comma-separated values, JSON, SQL, Microsoft Excel
 ### Prerequisites
 * Python 3.0
 
