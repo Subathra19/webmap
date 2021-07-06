@@ -7,18 +7,42 @@ map=folium.Map(location=[13.082269, 80.277665],zoom_start=5,tiles="OpenStreetMap
 
 fgC=folium.FeatureGroup(name="Countries")
 
-data=pandas.read_csv("countries.csv")
-latitude=list(data["latitude"])
-longitude=list(data["longitude"])
-country_name=list(data["name"])
+data=pandas.read_csv("Book1.csv")
+latitude=list(data["Capital Latitude"])
+longitude=list(data["Capital Longitude"])
+country_name=list(data["Country Name"])
+capital_name=list(data["Capital Name"])
+continent_name=list(data["Continent Name"])
 
 html = """<h4>Information:</h4>
-Name: <a href="https://www.google.com/search?q=%%22%s%%22" target="_blank">%s</a>
+
+<a href="https://www.google.com/search?q=%%22%s%%22" target="_blank">%s</a>
+<br>
+Capital: %s
+</br>
+Continent: %s
 """
 
-for lat,lon,name in zip(latitude,longitude,country_name):
-    frame=folium.IFrame(html=html % (name,name),width=200,height=100)
-    fgC.add_child(folium.Marker(location=[lat,lon],popup=folium.Popup(frame),icon=folium.Icon(color="red")))
+def get_color(continent):
+    if(continent=="Asia"):
+        return "blue"
+    elif(continent=="Africa"):
+        return "red"
+    elif(continent=="Europe"):
+        return "pink"
+    elif(continent=="Australia"):
+        return "orange"
+    elif(continent=="North America"):
+        return "darkpurple"
+    elif(continent=="South America"):
+        return "green"
+    else:    
+        return "lightgray"
+
+
+for lat,lon,country,capital,continent in zip(latitude,longitude,country_name,capital_name,continent_name):
+    frame=folium.IFrame(html=html % (country,country,capital,continent),width=200,height=100)
+    fgC.add_child(folium.Marker(location=[lat,lon],popup=folium.Popup(frame),icon=folium.Icon(color=get_color(continent))))
 
 fgP=folium.FeatureGroup(name="Population")
 fgP.add_child(folium.GeoJson(open("world.json",encoding = "utf-8-sig").read(),
