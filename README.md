@@ -1,8 +1,9 @@
 # Web Map 
-The most classic game of all time is built with PyGame.
-* Objective: Catch the maximum number of food items
-* Rules: Snake should not touch the boundaries or its body.
-
+* An interactive python-based web application map of countries and population using folium. The following details are popped up on clicking the marker:
+  * Contry name
+  * Capital name
+  * Continent name
+  * HTML Link 
 ### Prerequisites
 * Python 3.0
 
