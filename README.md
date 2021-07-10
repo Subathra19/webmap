@@ -1,4 +1,3 @@
-![GitHub repo file count](https://img.shields.io/github/directory-file-count/Subathra19/webmap)
 # Web Map 
 * An interactive python-based web application map of countries and population using folium. The following details are popped up on clicking the marker:
   * Contry name
